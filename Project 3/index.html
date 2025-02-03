@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CS2 Console Basics</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>CS2 Console Basics</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#How_To_Turn_The_Console_On">How To Turn The Console On</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Media_Commands">Media Commands</a>
+        </li>
+      <li>
+        <a class="nav-link" href="#Crosshair_and_Viewmodel_Commands">Crosshair and Viewmodel Commands</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#The_Most_Important_Command">The Most Important Command</a>
+        </li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+        <article>
+          <p>What is the console on CS2 and why should you use it?</p>
+          <p>The console is just that. A console. It's a feature of nearly all of Valve's games that utilize the Source Engine. 
+            <ul>
+            <li>A way for players to tinker with the game's settings on the fly, without using the User Interface</li>
+            <li>Sometimes getting access to settings that don't even exist in said UI.</li> 
+            <br>Even though Counter-Strike 2 uses the newest Source 2 engine, the console feature is <b>still</b> implemented
+            and fully usable. CS2's settings include ALL the customizability you could want, yet some people like myself still prefer to use the console, which 
+            can be useful when:
+            <br><br><li>Adjusting your own personal settings</li>
+            <li>Setting up a community server for you and your friends to play on.</li>
+            </ul>
+            <br>Let's dive into some of these settings you can learn yourself.
+          </p>
+        </article>
+    </section>
+    <section class="main-section" id="How_To_Turn_The_Console_On">
+      <header>How To Turn The Console On</header>
+      <article>
+        <p><ul><li>To use the Console, you first have to enable it. In order to do that, navigate to this panel in the Settings and set "Enable Developer Console (~) to 'Yes'</li></ul>
+          <br> <img src="https://files.bo3.gg/uploads/image/17572/image/webp-a57eccdeb0f9ddff1d250e19e8c5d803.webp">
+        </p>
+        <p>Good job! Now you have access to the console. At any time you can press the "~" button on your keyboard to pull it up.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Media_Commands">
+      <header>Media Commands</header>
+      <article>
+        <p>Let's start with something simple such as the media commands.
+          <br> Turn on the console.
+          <br> The first and easiest command we are going to use is "volume". This lets you adjust, you guessed it: the game's volume. A benefit of using this command
+          is that you can tweak the volume more precisely than from the settings. For an example in the settings you can't set the volume to 0.01(0.1 is the minimum
+          value available).
+          <code>volume 1 //Here you can set any value for the volume from 0-1, using '.' i.e '0.05'</code>
+        </p>
+        <p>Is the enemy team toxic and irritating? Spamming distracting or simply mean messages? Try this command:
+          <code>cl_mute_enemy_team 1 //Set a value from 0(off) to 1(on) - This blocks all communication from the enemy team.</code>
+          <br>Are <i>your</i> teammates annoying, too loud and don't even speak English? Use this:
+          <code>cl_mute_all_but_friends_and_party 1 //Once again, 0(off), 1(on) - This blocks all communication from everyone that isn't your Steam friend, or from
+            your party.
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Crosshair_and_Viewmodel_Commands">
+      <header>Crosshair and Viewmodel Commands</header>
+      <article>
+        <p>Here's a list of some Crosshair commands to actively change your crosshair without opening settings:
+          <br><code>cl_crosshairsize [number] //Adjust length of crosshair [-20:20].
+            <br>cl_crosshairgap [number] //Adjust center gap of crosshair [-10:10].
+            <br>cl_crosshairthickness [number] //Adjust thickness of crosshair [-2:2].
+            <br>cl_crosshairstyle [number] //Select different crosshair styles [1:5].
+            <br>cl_crosshaircolor [number] //Select color of crosshair [0:4].
+            <br>cl_crosshair_drawoutline [number] //Toggle the outline on or off [0:1].
+            <br>cl_crosshair_outlinethickness [number] //Adjust thickness of outline [0.1:3].
+          </code>
+        </p>
+        <p>Viewmodel commands:
+          <br><code>viewmodel_fov [number] //Adjust FOV of viewmodel [54:68].
+            <br>viewmodel_offset_x [number] //Adjust horizontal position of viewmodel [-2.5:2.5].
+            <br>viewmodel_offset_y [number] //Adjust model distance [-2:2].
+            <br>viewmodel_offset_z [number] //Adjust vertical position of viewmodel [-2:2].
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="The_Most_Important_Command">
+      <header>The Most Important Command</header>
+      <article>
+        <p>Once you've had enough of this game, this is <i><b>The Most Important Command</b></i>
+        <code>quit</code></p>
+        <p>Alternatively, you can also use:
+          <code>disconnect</code>
+          <br>Thank you for reading!
+        </p>
+      </article>
+    </section>
+    </section>
+  </main>
+</body>
+</html>

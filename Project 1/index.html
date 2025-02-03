@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <title> Surbey Form </title>
+  <head>
+    </head>
+    <body>
+      <div class="form-dude">
+      <h1 id="title"> Survey Form </h1>
+      <p id="description"> This form is a course project </p>
+      <form id="survey-form">
+        <label  id="name-label">Name</label><input id="name" type="text" placeholder="Enter Your Name" required></input><br><br>
+        <label id="email-label">Email</label><input id="email" type="email" placeholder="Enter Your Email" required></input> <br><br>
+        <label id="number-label">Age</label><input id="number" type="number" min="18" max="120" placeholder="Enter Your Age" required></input> <br> <br>
+        <label for="dropdown">Why did you start coding?</label> <br>
+                <select id="dropdown">
+                  <option value="">(select one)</option>
+            <option value="1">It's a lot of fun!</option>
+            <option value="2">It's a good career path!</option>
+            <option value="3">All of the above</option>
+            <option value="4">Other</option>
+          </select> <br><br>
+          <legend>Are you a:</legend>
+        <label for="occupation-student"><input id="occupation-student" type="radio" name="occupation" class="inline" checked value="student" /> Student</label>
+       <br> <label for="occupation-software_engineer"><input id="occupation-software_engineer" type="radio" name="occupation" class="inline" value="software-engineer" /> Software Engineer</label> <br><br>
+
+        <label for="bio">Tell us something about yourself:<br>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I have been coding since the age of 3..."></textarea>
+        </label> <br><br>
+        <label for="terms-and-conditions" />What is your gender? <br>
+        <input class="inline" id="male" type="checkbox" name="male" value="male">Male</input>
+        <input class="inline" id="female" type="checkbox" name="female" value="female">Female</input>
+        <input class="inline" id="other" type="checkbox" name="other" value="other">Rather not say</input>
+      </label> <br><br>
+      <input type="submit" value="Submit" id="submit"></input>
+
+        </form>
+
+        </div>
+      </body> 
+  </html>
